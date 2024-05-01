@@ -14,10 +14,10 @@ const FooterComponent = (props: Props) => {
                   <div className="w-[35.75px] h-[35.75px] relative">
                   </div>
                 </div>
-                <div className="text-black text-2xl font-semibold ">tilebit</div>
+                <div className="text-black text-2xl font-semibold">PrixPro</div>
               </div>
             </div>
-            <div className="self-stretch text-black text-base font-normal  leading-relaxed">In aliquet malesuada consectetur in enim eu maecenas suspendisse. Elementum at enim consequat elit nunc dictum. Mauris amet gravida.</div>
+
           </div>
           <div className="flex-col justify-start items-start gap-8 inline-flex">
             <div className="flex-col justify-start items-start gap-4 flex">
@@ -32,7 +32,7 @@ const FooterComponent = (props: Props) => {
               <div className="w-[337px] justify-start items-start gap-4 inline-flex">
                 <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-2 inline-flex">
                   <div className="self-stretch grow shrink basis-0 p-3 bg-white rounded-lg border border-gray-300 justify-start items-center gap-3 inline-flex">
-                    <div className="grow shrink basis-0 text-gray-400 text-base font-normal  leading-normal">Placeholer</div>
+                    <div className="grow shrink basis-0 text-gray-400 text-base font-normal  leading-normal"></div>
                     <div className="w-4 h-4 p-px justify-center items-center flex" />
                   </div>
                 </div>
@@ -46,7 +46,7 @@ const FooterComponent = (props: Props) => {
         <div className="self-stretch justify-between items-start inline-flex">
           <div className="justify-start items-start gap-8 flex">
             <div className="text-black text-base font-normal  leading-normal">©2023</div>
-            <div className="text-black text-base font-normal  leading-normal">Tilebit.io</div>
+
           </div>
           <div className="justify-start items-start gap-8 flex">
             <div className="text-black text-base font-normal  leading-normal">Privacy Policy</div>

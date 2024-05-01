@@ -19,18 +19,19 @@ useEffect( () => {
 
   requestAnimationFrame(animate)
 
-}, [])
+}, [animate])
 
 
 
-const animate = () => {
+// eslint-disable-next-line react-hooks/exhaustive-deps
+const animate = useCallback(() => {
 
   if (stickyMask.current) {
     const maskSizeProgress = targetMaskSize * getScrollProgress();
     stickyMask.current.style.webkitMaskSize = `${(initialMaskSize + maskSizeProgress) * 100}%`;
     requestAnimationFrame(animate);
   }
-};
+});
 
 
 
