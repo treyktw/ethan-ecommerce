@@ -14,14 +14,14 @@ const pages = [
   },
   {
     title: "Shop",
-    src: "hover1.png",
+    src: "hover3.png",
     color: "#000000",
     key: "aboutus",
 
   },
   {
     title: "Our Mission",
-    src: "",
+    src: "hover1.png",
     color: "#000000",
     key: "aboutus",
   }
