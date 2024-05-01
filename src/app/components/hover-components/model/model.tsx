@@ -5,10 +5,12 @@ import gsap from 'gsap';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from './style.module.css';
+import Link from 'next/link';
 
 type Props = {
   modal: any,
   projects: any
+  href: any
 }
 
 const scaleAnimation = {
@@ -19,7 +21,7 @@ const scaleAnimation = {
 
 
 
-export default function Model({modal, projects}: Props) {
+export default function Model({modal, projects, href}: Props) {
   const modalContainer = useRef(null);
 
   const cursor = useRef(null);
@@ -75,7 +77,7 @@ export default function Model({modal, projects}: Props) {
          <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
             <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
             {
-                projects.map( (project: { src: any; color: any; }, index: any) => {
+                projects.map( (project: { src: any; color: any; }, index: any, href: string) => {
                 const { src, color } = project
                 return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
                     <Image 
@@ -91,7 +93,9 @@ export default function Model({modal, projects}: Props) {
         </motion.div>
         <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
 
-        <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
+        <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>        View
+
+        </motion.div>
     </>
   )
 }

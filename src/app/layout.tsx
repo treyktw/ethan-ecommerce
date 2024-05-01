@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Keania_One } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/navbar";
 
-const inter = Keania_One({ 
+const inter = Keania_One({
   subsets: ["latin"],
   weight: ["400"]
 
- });
+});
 
 export const metadata: Metadata = {
   title: "Prix Pro",
@@ -20,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className="text-center w-full h-[100px]">
+          <Navbar />
+        </header>
+        {children}
+      </body>
     </html>
   );
 }

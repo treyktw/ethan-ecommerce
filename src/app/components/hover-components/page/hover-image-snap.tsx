@@ -8,21 +8,22 @@ import Model from '../model/model'
 const pages = [
   {
     title: "About Us",
-    src: "",
+    src: "hovber2.png",
     color: "#000000",
-    key: "aboutus"
+    key: "aboutus",
   },
   {
     title: "Shop",
-    src: "",
+    src: "hover1.png",
     color: "#000000",
-    key: "aboutus"
+    key: "aboutus",
+
   },
   {
     title: "Our Mission",
     src: "",
     color: "#000000",
-    key: "aboutus"
+    key: "aboutus",
   }
 ]
 
@@ -38,7 +39,7 @@ const HoverComponent = (props: Props) => {
           return <Projects index={index}  title={pages.title} setModel={setModel} key={index}/>
         })}
       </div>
-      <Model modal={model} projects={pages}/>
+      <Model modal={model} projects={pages} href={pages}/>
       {/* <div className="left-[125px] top-[462px] absolute text-center text-black text-9xl font-normal font-['Keania One']">Our Mission</div>
       <div className="w-[504px] h-[200px] left-[16px] top-[660px] absolute text-center text-black text-9xl font-normal font-['Keania One']">Shop</div>
       <div className="w-[1720px] h-[0px] left-[80px] top-[212px] absolute border border-black"></div>

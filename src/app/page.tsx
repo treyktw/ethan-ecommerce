@@ -8,9 +8,6 @@ export default function Home() {
   return (
     <>
       <div className="w-full h-screen justify-center items-center">
-        <header className="text-center w-full h-[100px]">
-        <Navbar />
-        </header>
         <main>
           <Hero />         
         </main>
