@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.css";
 import { MaskText } from "./_components/mask-text";
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 export default function Home() {
   const container = useRef(null);
