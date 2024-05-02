@@ -16,9 +16,12 @@ import {
 import Image from "next/image";
 import gsap from "gsap";
 
+type Props = {
+
+}
 
 
-const About = () => {
+const About = ({}: Props) => {
   const plane1 = useRef(null);
 
   const plane2 = useRef(null);
